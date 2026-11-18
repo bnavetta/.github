@@ -1,0 +1,9 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/octo-sts/app/refs/heads/main/pkg/octosts/octosts.OrgTrustedIssuers.json
+
+# "enforce" (the default) rejects a token that the allowlist does not permit.
+# "audit" permits them and records each one the allowlist rejects.
+mode: enforce
+
+# octo-sts matches these exactly. A trailing slash makes a different issuer.
+issuers:
+  - https://token.actions.githubusercontent.com
