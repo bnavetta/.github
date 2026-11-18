@@ -1,0 +1,14 @@
+# # yaml-language-server: $schema=https://raw.githubusercontent.com/octo-sts/app/refs/heads/main/pkg/octosts/octosts.OrgTrustPolicy.json
+# See https://github.com/octo-sts/app#policy-cleanup
+issuer: https://accounts.google.com
+# octo-sts-policy-cleanup@octo-sts.iam.gserviceaccount.com, which runs the
+# cleanup job for octo-sts.dev.
+subject: "101798790782455855833"
+claim_pattern:
+  email: octo-sts-policy-cleanup@octo-sts\.iam\.gserviceaccount\.com
+
+permissions:
+  contents: write # push the branch that removes unused policies
+  pull_requests: write # open the pull request from it
+  issues: write # report policies that only fail
+repositories: [] # every repository the App can access

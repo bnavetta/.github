@@ -7,3 +7,4 @@ mode: enforce
 # octo-sts matches these exactly. A trailing slash makes a different issuer.
 issuers:
   - https://token.actions.githubusercontent.com
+  - https://accounts.google.com
