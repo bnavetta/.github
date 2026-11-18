@@ -2,7 +2,7 @@
 # Policy for cross-repo access in my NixOS config's CI
 
 issuer: https://token.actions.githubusercontent.com
-subject_pattern: "repo:bnavetta@1683332/middle-earth-infra@204013876:[a-z0-9:/]+"
+subject_pattern: "repo:bnavetta@1683332/middle-earth@580904438:[a-z0-9:/]+"
 
 permissions:
   contents: read
